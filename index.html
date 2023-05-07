@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Переговорная</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="./js/libs/air-datepicker/air-datepicker.css"
+    />
+    <script src="./js/libs/air-datepicker/air-datepicker.js"></script>
+    <script defer type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="app__content">
+          <h1 class="title">Форма бронирования переговорной</h1>
+          <form class="form">
+            <select name="tower" id="tower" class="select">
+              <option
+                value="0"
+                selected
+                disabled
+                style="display: none"
+              >
+                Выберите башню
+              </option>
+              <option value="A">Башня А</option>
+              <option value="Б">Башня Б</option>
+            </select>
+            <select name="floor" id="floor" class="select">
+              <option
+                value="0"
+                selected
+                disabled
+                style="display: none"
+              >
+                Выберите этаж
+              </option>
+            </select>
+            <select name="meet" id="meet" class="select">
+              <option
+                value="0"
+                selected
+                disabled
+                style="display: none"
+              >
+                Выберите переговорную
+              </option>
+            </select>
+            <input
+              type="text"
+              id="input"
+              class="datepicker-here select"
+              readonly
+              placeholder="Выберите дату и время"
+            />
+            <textarea
+              name="textarea"
+              id="textarea"
+              class="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Введите комментарий"
+            ></textarea>
+            <div class="btns">
+              <button class="btn__add btn">Добавить</button>
+              <button class="btn__del btn">Очистить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
